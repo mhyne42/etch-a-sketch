@@ -1,0 +1,36 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+#reset-button {
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#grid-container {
+    display: grid;
+    grid-gap: 1px;
+    width: 90vw;
+    height: 90vw;
+    max-width: 800px;
+    max-height: 800px;
+    border: 2px solid #333;
+    grid-template-columns: repeat(16, 1fr); /* Par défaut à 16x16 */
+    grid-template-rows: repeat(16, 1fr); /* Par défaut à 16x16 */
+}
+
+.grid {
+    background-color: #fff;
+    border: 1px solid #999;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
